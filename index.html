@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>
+        Hi
+    </title>
+    <script>
+        function changeFunction() {
+
+            var gumption = document.getElementById("change");
+            gumption.innerText = "gumption"
+        }
+
+        function deleteFunction() {
+            var channi = document.getElementById("change");
+            channi.innerText = ""
+        }
+        function addMyLifeStory() {
+            var me = document.getElementById("change")
+            me.innerText = "on the 22 of november in 2004 a beautiful fat ass baby was born.  13 years later nothing much happened and that boy's life has not changed at all"
+        }
+        function addStuff() {
+            var grabbedDiv = document.getElementById("change");
+            var typedContent =  document.getElementById("text").value;
+            var colorUsed = document.getElementById("color").value;
+
+            // grabbedDiv.innerHTML = "<div style='color: " + colorUsed + "'>" + typedContent + "</div>"
+            grabbedDiv.innerHTML = typedContent;
+            grabbedDiv.style.color=colorUsed
+        }
+        // function changeColor() {
+        //     var changeColor =document.getElementById("change")
+        //     var colorUsed = document.getElementById("color").value
+        //     changeColor.color = colorUsed
+        // }
+    </script>
+</head>
+
+<body>
+    <div id="change">
+        content
+    </div>
+    <button onclick="changeFunction()">
+        add
+    </button>
+    <button onclick="deleteFunction()">
+        Delete
+    </button>
+    <button onclick="addMyLifeStory()">
+        add my life story
+    </button>
+    <button onclick="addStuff()">
+        add my life content
+    </button>
+    <input id = "text" type="text">
+    <input id ="color" type="color">
+</body>
+
+</html>
